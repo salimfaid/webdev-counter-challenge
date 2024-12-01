@@ -1,5 +1,39 @@
 1. Why do you use "using strict" at the top of your JS files?
+answer: the "use strict" is way to opt into strict mode in javascript.for help in catching common coding mistakes and make javascript engine throw errors for 
+ptentially problematic code.
+ 
 2. What does line 3 mean?
+answer:
 3. What is happening on lines 5-8 and why?
+in 5:
+
+This selects the first element in the DOM that has the class count.
+The countElement variable now holds a reference to that DOM element.
+The purpose of this element is to display the current count in the app.
+document
+in 6:
+
+This selects the first element in the DOM with the class increment-btn, which corresponds to the "Increase Count" button.
+The incrementBtn variable now holds a reference to that button.
+You will use this to add functionality to increase the counter when the button is clicked.
+in 7:
+
+This selects the first element in the DOM with the class reset-btn, which corresponds to the "Reset Count" button.
+The resetBtn variable now holds a reference to that button.
+You'll use this to add functionality to reset the counter to 0 when clicked.
+in 8:
+
+This selects the first element in the DOM with the class decrement-btn, which corresponds to the "Decrease Count" button.
+The decrementBtn variable now holds a reference to that button.
+You will use this to add functionality to decrease the counter when clicked.
+
 4. If you implemented the functionality of the buttons,
    why do you think I wrote the JS code the way I did?
+   answer: 
+   In essence, the code is structured in this way to:
+
+1'Ensure modularity and maintainability.
+2'Promote readability through clear and descriptive function names.
+3'Encourage easy extensions and future modifications.
+4'Keep the code organized and easy to debug.
+5'Enable reusability of functions for possible new features.
